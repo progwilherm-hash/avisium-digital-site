@@ -226,6 +226,8 @@
       padding: 24px 0 40px;
       font-size: 0.92rem;
     }
+    footer a { color: var(--muted); text-decoration: underline; }
+    footer a:hover { color: var(--text); }
     @media (max-width: 900px) {
       .hero-grid, .grid-3, .steps, .offer {
         grid-template-columns: 1fr;
@@ -380,8 +382,12 @@
   </main>
 
   <footer>
-    <div class="container">
-      © 2026 Avisium Digital — Gestion d’avis Google et optimisation de la réputation en ligne pour entreprises locales.
+    <div class="container" style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;justify-content:space-between;">
+      <div>© 2026 Avisium Digital — Micro-entreprise — SIREN : <strong>[TON SIREN]</strong></div>
+      <div style="display:flex;gap:14px;flex-wrap:wrap;">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="politique-confidentialite.html">Politique de confidentialité</a>
+      </div>
     </div>
   </footer>
 </body>
